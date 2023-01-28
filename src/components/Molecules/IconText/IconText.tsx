@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Icon } from '../../index';
-import type { FontelloIcons } from '../../Atoms/Icon/Icon';
+import type { FontelloIcons } from '../../shared/shared-types';
 import './IconText.less';
 
 interface IconTextProps {

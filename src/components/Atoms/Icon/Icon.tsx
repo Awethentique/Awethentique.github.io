@@ -1,10 +1,7 @@
 import React from 'react';
 import './Icon.less';
 import { Popover } from '../../index';
-import type { IconSizes } from '../../shared/shared-types';
-import { fontelloIconSet } from './mockData';
-// import { TooltipPlacement } from '../Tooltip/TooltipProps';
-
+import type { IconSizes, FontelloIcons } from '../../shared/shared-types';
 interface CommonIconProps {
   testId?: string;
   style?: React.CSSProperties;
@@ -15,8 +12,6 @@ interface CommonIconProps {
   className?: string;
   onClick?: React.MouseEventHandler<HTMLElement>;
 }
-
-export type FontelloIcons = (typeof fontelloIconSet)[number];
 
 type ConditionalIconProps =
   | {
