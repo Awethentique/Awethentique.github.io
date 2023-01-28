@@ -1,9 +1,9 @@
 import React from 'react';
 import { ProjectCard, List } from '../../index';
 import HTML5PeriodicTable from '../../../assets/images/HTML5-periodic-table.png';
-import UXEassessment from '../../../assets/images/UXE-assessment.png';
+// import UXEassessment from '../../../assets/images/UXE-assessment.png';
 import AtomicDesign from '../../../assets/images/atomic-design.png';
-import UXEassessmentAvatar from '../../../assets/images/avatars/assessment.png';
+// import UXEassessmentAvatar from '../../../assets/images/avatars/assessment.png';
 import HTML5PeriodicTableAvatar from '../../../assets/images/avatars/HTML5.png';
 import AtomicDesignAvatar from '../../../assets/images/avatars/atom.png';
 
@@ -18,7 +18,7 @@ const Content = () => {
     //   title: 'UXE assessment',
     //   description:
     //     'I was tasked to build a web page as an assessment for a job interview. Here I taught myself some new libraries.',
-    //   url: 'https://awethentique.github.io/projects/glofox-assessment/index.html',
+    //   url: '/projects/glofox-assessment/index.html',
     // },
     {
       imgSrc: HTML5PeriodicTable,
@@ -26,7 +26,7 @@ const Content = () => {
       title: 'Periodic table',
       description:
         'Inspired by the work done by Mike Golus on a periodic table, I decided to further expand his project and make an HTML 5 variation.',
-      url: 'https://awethentique.github.io/projects/HTML5-Periodic/index.html',
+      url: '/projects/HTML5-Periodic/index.html',
     },
     {
       imgSrc: AtomicDesign,

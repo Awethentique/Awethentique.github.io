@@ -1,6 +1,6 @@
 {
   "short_name": "my-io-project",
-  "name": "Ritesh Makan - Profile",
+  "name": "Ritesh Makan - i0 Profile",
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,5 +22,5 @@
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
-},
+}
 
