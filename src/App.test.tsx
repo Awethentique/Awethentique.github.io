@@ -2,8 +2,24 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+export default global.matchMedia =
+  global.matchMedia ||
+  function (query) {
+    return {
+      matches: false,
+      media: query,
+      onchange: null,
+      addListener: jest.fn(), // deprecated
+      removeListener: jest.fn(), // deprecated
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      dispatchEvent: jest.fn(),
+    };
+  };
+
+test('renders app', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const container = screen.getByTestId('my-app');
+  expect(container).toBeInTheDocument();
+  expect(container).toMatchSnapshot();
 });

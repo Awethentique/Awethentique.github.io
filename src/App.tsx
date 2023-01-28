@@ -6,7 +6,7 @@ import './style/style.less';
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" data-testid="my-app">
       <Header />
       <Content />
     </div>

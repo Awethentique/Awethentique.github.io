@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+<div
+  class="app"
+  data-testid="my-app"
+>
+  <header
+    class="app-header"
+  >
+    <div
+      class="app-header-wrapper"
+    >
+      <span
+        class="ant-avatar ant-avatar-circle ant-avatar-image cc-avatar profile-pic css-dev-only-do-not-override-1n7nwfa"
+        data-testid="avatar-component"
+        style="width: 200px; height: 200px; line-height: 200px; font-size: 18px;"
+      >
+        <img
+          src="me.jpg"
+        />
+      </span>
+      <div
+        class="cc-contact-info  "
+      >
+        <div
+          class="ant-card cc-card  css-dev-only-do-not-override-1n7nwfa"
+          data-testid="card-component"
+        >
+          <div
+            class="ant-card-body"
+          >
+            <span
+              class="ant-typography link-parts-0 css-dev-only-do-not-override-1n7nwfa"
+            >
+              https:
+            </span>
+            <span
+              class="ant-typography link-parts-1 css-dev-only-do-not-override-1n7nwfa"
+            >
+              //awethentique.github.io
+            </span>
+            <span
+              class="ant-typography link-parts-2 css-dev-only-do-not-override-1n7nwfa"
+            >
+              /projects
+              <div
+                aria-label="Copy"
+                class="ant-typography-copy"
+                role="button"
+                style="border: 0px; background: transparent; padding: 0px; line-height: inherit; display: inline-block;"
+                tabindex="0"
+              >
+                <span
+                  aria-label="copy"
+                  class="anticon anticon-copy"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="copy"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </span>
+            <p>
+              <span
+                class="ant-typography user-name-label css-dev-only-do-not-override-1n7nwfa"
+              >
+                User:
+              </span>
+              <span
+                class="ant-typography user-name css-dev-only-do-not-override-1n7nwfa"
+              >
+                Ritesh Makan
+              </span>
+              <br />
+              <span
+                class="ant-typography role-label css-dev-only-do-not-override-1n7nwfa"
+              >
+                Role:
+              </span>
+              <span
+                class="ant-typography role css-dev-only-do-not-override-1n7nwfa"
+              >
+                Ui/Ux Engineer/Architect
+              </span>
+            </p>
+            <span
+              class="ant-typography msg-label css-dev-only-do-not-override-1n7nwfa"
+            >
+              WARNING:
+            </span>
+            <span
+              class="ant-typography msg css-dev-only-do-not-override-1n7nwfa"
+            >
+              Passionate about user experience!
+            </span>
+          </div>
+        </div>
+        <div
+          class="contact-info"
+        >
+          <i
+            class="cc-icon fontello-icon awethentique-mail fontello-icon__size-default  icon-has-hover "
+            data-testid="cc-icon"
+          />
+          <i
+            class="cc-icon fontello-icon awethentique-linkedin-rect fontello-icon__size-default  icon-has-hover "
+            data-testid="cc-icon"
+          />
+        </div>
+      </div>
+    </div>
+    <img
+      alt="header background"
+      class="header-bg-img"
+      src="header-bg.png"
+    />
+    <div
+      class="cc-slit"
+    />
+  </header>
+  <main
+    class="app-content"
+  >
+    <div
+      class="ant-list ant-list-split ant-list-grid cc-list  css-dev-only-do-not-override-1n7nwfa"
+      data-testid="list-component"
+    >
+      <div
+        class="ant-spin-nested-loading css-dev-only-do-not-override-1n7nwfa"
+      >
+        <div
+          class="ant-spin-container"
+        >
+          <div
+            class="ant-row css-dev-only-do-not-override-1n7nwfa"
+            style="margin-left: -8px; margin-right: -8px;"
+          >
+            <div
+              style="width: 33.333333333333336%; max-width: 33.333333333333336%;"
+            >
+              <div
+                class="ant-col css-dev-only-do-not-override-1n7nwfa"
+                style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              >
+                <div
+                  class="ant-list-item"
+                >
+                  <div
+                    class="cc-project-card  has-click-through"
+                  >
+                    <div
+                      class="ant-card cc-card  css-dev-only-do-not-override-1n7nwfa"
+                      data-testid="card-component"
+                    >
+                      <div
+                        class="ant-card-cover"
+                      >
+                        <img
+                          alt="Periodic table"
+                          src="HTML5-periodic-table.png"
+                        />
+                      </div>
+                      <div
+                        class="ant-card-body"
+                      >
+                        <div
+                          class="ant-card-meta"
+                        >
+                          <div
+                            class="ant-card-meta-avatar"
+                          >
+                            <span
+                              class="ant-avatar ant-avatar-circle ant-avatar-image cc-avatar  css-dev-only-do-not-override-1n7nwfa"
+                              data-testid="avatar-component"
+                            >
+                              <img
+                                src="HTML5.png"
+                              />
+                            </span>
+                          </div>
+                          <div
+                            class="ant-card-meta-detail"
+                          >
+                            <div
+                              class="ant-card-meta-title"
+                            >
+                              Periodic table
+                            </div>
+                            <div
+                              class="ant-card-meta-description"
+                            >
+                              <div
+                                aria-label="Inspired by the work done by Mike Golus on a periodic table, I decided to further expand his project and make an HTML 5 variation."
+                                class="ant-typography ant-typography-ellipsis css-dev-only-do-not-override-1n7nwfa"
+                              >
+                                Inspired by the work done by Mike Golus on a periodic table, I decided to further expand his project and make an HTML 5 variation.
+                                <span
+                                  aria-hidden="true"
+                                  style="position: fixed; display: block; left: 0px; top: 0px; z-index: -9999; visibility: hidden; pointer-events: none; font-size: 0px; word-break: keep-all; white-space: nowrap;"
+                                >
+                                  lg
+                                </span>
+                                <span
+                                  aria-hidden="true"
+                                  style="position: fixed; display: block; left: 0px; top: 0px; z-index: -9999; visibility: hidden; pointer-events: none; font-size: 0px; width: 0px; white-space: normal; margin: 0px; padding: 0px;"
+                                >
+                                  <span
+                                    aria-hidden="true"
+                                  >
+                                    ...
+                                  </span>
+                                  <a
+                                    aria-label="Expand"
+                                    class="ant-typography-expand"
+                                  >
+                                    more
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="width: 33.333333333333336%; max-width: 33.333333333333336%;"
+            >
+              <div
+                class="ant-col css-dev-only-do-not-override-1n7nwfa"
+                style="padding-left: 8px; padding-right: 8px; flex: 1 1 auto;"
+              >
+                <div
+                  class="ant-list-item"
+                >
+                  <div
+                    class="cc-project-card  "
+                  >
+                    <div
+                      class="ant-card cc-card  css-dev-only-do-not-override-1n7nwfa"
+                      data-testid="card-component"
+                    >
+                      <div
+                        class="ant-card-cover"
+                      >
+                        <img
+                          alt="Atomic design principles"
+                          src="atomic-design.png"
+                        />
+                      </div>
+                      <div
+                        class="ant-card-body"
+                      >
+                        <div
+                          class="ant-card-meta"
+                        >
+                          <div
+                            class="ant-card-meta-avatar"
+                          >
+                            <span
+                              class="ant-avatar ant-avatar-circle ant-avatar-image cc-avatar  css-dev-only-do-not-override-1n7nwfa"
+                              data-testid="avatar-component"
+                            >
+                              <img
+                                src="atom.png"
+                              />
+                            </span>
+                          </div>
+                          <div
+                            class="ant-card-meta-detail"
+                          >
+                            <div
+                              class="ant-card-meta-title"
+                            >
+                              Atomic design principles
+                            </div>
+                            <div
+                              class="ant-card-meta-description"
+                            >
+                              <div
+                                aria-label="The principles of Atomic design has taught the value in building scalable solutions from the start"
+                                class="ant-typography ant-typography-ellipsis css-dev-only-do-not-override-1n7nwfa"
+                              >
+                                The principles of Atomic design has taught the value in building scalable solutions from the start
+                                <span
+                                  aria-hidden="true"
+                                  style="position: fixed; display: block; left: 0px; top: 0px; z-index: -9999; visibility: hidden; pointer-events: none; font-size: 0px; word-break: keep-all; white-space: nowrap;"
+                                >
+                                  lg
+                                </span>
+                                <span
+                                  aria-hidden="true"
+                                  style="position: fixed; display: block; left: 0px; top: 0px; z-index: -9999; visibility: hidden; pointer-events: none; font-size: 0px; width: 0px; white-space: normal; margin: 0px; padding: 0px;"
+                                >
+                                  <span
+                                    aria-hidden="true"
+                                  >
+                                    ...
+                                  </span>
+                                  <a
+                                    aria-label="Expand"
+                                    class="ant-typography-expand"
+                                  >
+                                    more
+                                  </a>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+`;
