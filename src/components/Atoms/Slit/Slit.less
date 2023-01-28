@@ -1,0 +1,29 @@
+.cc-slit {
+  position: relative;
+  top: -28px;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+  }
+
+  &::before {
+    height: 3px;
+    width: 80%;
+    background: var(--slit-gradient);
+    transform: translateY(25px);
+    filter: blur(6px);
+    position: relative;
+  }
+
+  &::after {
+    height: inherit;
+    background: inherit;
+    width: 100%;
+    transform: translateY(0);
+    background: var(--app-background);
+    height: 20px;
+  }
+}

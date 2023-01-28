@@ -1,0 +1,173 @@
+﻿Diagnose log at 2023-01-27T23:18:49Z
+
+AppPath: /usr/local/bin/git-credential-manager
+InstallDir: /usr/local/share/gcm-core/
+Version: 2.0.886+ea93cb5158
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: macOS
+OSVersion: 13.2
+Reading environment variables... OK
+ Variables:
+LC_ALL=en_US.UTF-8
+SECURITYSESSIONID=186ca
+COLORTERM=truecolor
+NODE_PATH=/Users/ritesh.makan/.nvm/versions/node/v9.11.1/lib/node_modules/
+JENV_SHELL=zsh
+NVM_BIN=/Users/ritesh.makan/.nvm/versions/node/v18.13.0/bin
+SHLVL=1
+LANG=en_US.UTF-8
+__CFBundleIdentifier=com.googlecode.iterm2
+COMMAND_MODE=unix2003
+TERM_SESSION_ID=w0t0p2:4AF63445-AEA9-41B8-B971-7E0C595E9F58
+LSCOLORS=Gxfxcxdxbxegedabagacad
+TERM_PROGRAM_VERSION=3.4.19
+NVM_CD_FLAGS=-q
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.LAkwN4Ahkr/Listeners
+JAVA_HOME=/Users/ritesh.makan/.jenv/versions/1.8.0.201
+NVM_INC=/Users/ritesh.makan/.nvm/versions/node/v18.13.0/include/node
+ITERM_SESSION_ID=w0t0p2:4AF63445-AEA9-41B8-B971-7E0C595E9F58
+TMPDIR=/var/folders/4s/xfbt8sk14sj9trxg3y14cr_4l7nsg9/T/
+COLORFGBG=7;0
+PATH=/usr/local/Cellar/git/2.28.0/libexec/git-core:/Users/ritesh.makan/.nvm/versions/node/v18.13.0/bin:/Users/ritesh.makan/.nvm/versions/node/v10.11.0/bin:/Users/ritesh.makan/bin:/usr/local/bin:/Users/ritesh.makan/.rbenv/shims:/Users/ritesh.makan/.jenv/shims:/Users/ritesh.makan/Development/google-cloud-sdk/bin:/Users/ritesh.makan/.jenv/bin:/Users/ritesh.makan/.nvm/versions/node/v10.11.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/ritesh.makan/Library/Android/sdk/tools:/Users/ritesh.makan/Library/Android/sdk/platform-tools:/Library/Developer/apache-ant-1.9.4/bin:/Library/Developer/git-tf-2.0.3.20131219:/Applications/Momentics.app/host_10_2_0_15/darwin/x86/usr/bin/
+NVM_DIR=/Users/ritesh.makan/.nvm
+LOGNAME=ritesh.makan
+TERM_PROGRAM=iTerm.app
+LC_TERMINAL_VERSION=3.4.19
+XPC_SERVICE_NAME=0
+LESS=-R
+PWD=/Users/ritesh.makan/Development/Github-projects/Awethentique.github.io
+_=/usr/local/bin/git
+ITERM_PROFILE=Default
+USER=ritesh.makan
+ANDROID_HOME=/Users/ritesh.makan/Library/Android/sdk
+LC_TERMINAL=iTerm2
+ZSH=/Users/ritesh.makan/.oh-my-zsh
+JENV_LOADED=1
+RBENV_SHELL=zsh
+PAGER=less
+TERM=xterm-256color
+GIT_EXEC_PATH=/usr/local/Cellar/git/2.28.0/libexec/git-core
+HOME=/Users/ritesh.makan
+XPC_FLAGS=0x0
+__CF_USER_TEXT_ENCODING=0x267AE5E9:0:2
+LaunchInstanceID=65F49CC8-C19D-4CE2-869E-E9085AABF48A
+MANPATH=/Users/ritesh.makan/.nvm/versions/node/v18.13.0/share/man:/Library/Frameworks/Python.framework/Versions/3.8/share/man:/usr/local/share/man:/usr/share/man:/Library/Apple/usr/share/man:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/share/man:/Applications/Xcode.app/Contents/Developer/usr/share/man:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/share/man
+SHELL=/bin/zsh
+OLDPWD=/Users/ritesh.makan/Development/Github-projects
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/var/folders/4s/xfbt8sk14sj9trxg3y14cr_4l7nsg9/T/'...
+Checking basic file I/O...
+Writing to temporary file '/var/folders/4s/xfbt8sk14sj9trxg3y14cr_4l7nsg9/T/350140eab1accbb65778c63b'... OK
+Reading from temporary file '/var/folders/4s/xfbt8sk14sj9trxg3y14cr_4l7nsg9/T/350140eab1accbb65778c63b'... OK
+Deleting temporary file '/var/folders/4s/xfbt8sk14sj9trxg3y14cr_4l7nsg9/T/350140eab1accbb65778c63b'... OK
+Testing IFileSystem instance...
+UserHomePath: /Users/ritesh.makan
+UserDataDirectoryPath: /Users/ritesh.makan/.gcm
+GetCurrentDirectory(): /Users/ritesh.makan/Development/Github-projects/Awethentique.github.io
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:58830/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.28.0'
+Locating current repository... OK
+Git repository at '/Users/ritesh.makan/Development/Github-projects/Awethentique.github.io/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:/usr/local/etc/gitconfig	credential.helper=osxkeychain
+file:/Users/ritesh.makan/.gitconfig	user.email=ritesh.makan@gmail.com
+file:/Users/ritesh.makan/.gitconfig	user.name=Awethentique
+file:/Users/ritesh.makan/.gitconfig	status.submodulesummary=true
+file:/Users/ritesh.makan/.gitconfig	http.postbuffer=1000M
+file:/Users/ritesh.makan/.gitconfig	http.maxrequestbuffer=200M
+file:/Users/ritesh.makan/.gitconfig	core.compression=0
+file:/Users/ritesh.makan/.gitconfig	credential.helper=
+file:/Users/ritesh.makan/.gitconfig	credential.helper=/usr/local/share/gcm-core/git-credential-manager
+file:/Users/ritesh.makan/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.ignorecase=true
+file:.git/config	core.precomposeunicode=true
+file:.git/config	remote.origin.url=git@github.com:Awethentique/Awethentique.github.io.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.master.remote=origin
+file:.git/config	branch.master.merge=refs/heads/master
+file:.git/config	user.name=Awethentique
+file:.git/config	credential.username=Awethentique
+file:.git/config	credential.helper=
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /Users/ritesh.makan/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /Users/ritesh.makan/.local/.IdentityService/msal.cache
+MacKeyChainAccountName: MSALCache
+MacKeyChainServiceName: Microsoft.Developer.IdentityService
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

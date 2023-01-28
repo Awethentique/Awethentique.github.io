@@ -1,0 +1,1 @@
+export declare type IconSizes = 'ssm' | 'sm' | 'md' | 'default' | 'lg';
