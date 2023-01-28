@@ -1,46 +1,24 @@
 import React from 'react';
 import { ProjectCard, List } from '../../index';
-import HTML5PeriodicTable from '../../../assets/images/HTML5-periodic-table.png';
-// import UXEassessment from '../../../assets/images/UXE-assessment.png';
-import AtomicDesign from '../../../assets/images/atomic-design.png';
-// import UXEassessmentAvatar from '../../../assets/images/avatars/assessment.png';
-import HTML5PeriodicTableAvatar from '../../../assets/images/avatars/HTML5.png';
-import AtomicDesignAvatar from '../../../assets/images/avatars/atom.png';
-
-
+import { contentInfo } from '../../../data/AppData';
 import './Content.less';
 
 const Content = () => {
-  const data = [
-    // {
-    //   imgSrc: UXEassessment,
-    //   avatarSrc: UXEassessmentAvatar,
-    //   title: 'UXE assessment',
-    //   description:
-    //     'I was tasked to build a web page as an assessment for a job interview. Here I taught myself some new libraries.',
-    //   url: '/projects/glofox-assessment/index.html',
-    // },
-    {
-      imgSrc: HTML5PeriodicTable,
-      avatarSrc: HTML5PeriodicTableAvatar,
-      title: 'Periodic table',
-      description:
-        'Inspired by the work done by Mike Golus on a periodic table, I decided to further expand his project and make an HTML 5 variation.',
-      url: '/projects/HTML5-Periodic/index.html',
-    },
-    {
-      imgSrc: AtomicDesign,
-      avatarSrc: AtomicDesignAvatar,
-      title: 'Atomic design principles',
-      description:
-        'The principles of Atomic design has taught the value in building scalable solutions from the start',
-    },
-  ];
+  // const data =
   return (
     <main className="app-content">
       <List
-        grid={{ gutter: 16, column: 3 }}
-        dataSource={data}
+        // grid={{ gutter: 16, column: 3 }}
+        grid={{
+          gutter: 16,
+          xs: 1,
+          sm: 1,
+          md: 2,
+          lg: 3,
+          xl: 3,
+          xxl: 3,
+        }}
+        dataSource={contentInfo}
         renderItem={(item) => (
           <List.Item>
             <ProjectCard

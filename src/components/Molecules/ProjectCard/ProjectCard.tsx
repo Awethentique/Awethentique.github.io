@@ -3,16 +3,16 @@ import { Avatar, Typography, Card  } from '../../index';
 
 import './ProjectCard.less';
 
-const { Paragraph } = Typography;
+const { Paragraph, Text } = Typography;
 const { Meta } = Card;
 
 interface ProjectCardProps {
   imgSrc: string;
   imgAlt: string;
   avatarSrc: string;
-  cardTitle: string |'show-placeholder';
+  cardTitle: string | 'show-placeholder';
   description: string;
-  url?:string;
+  url?: string;
 }
 
 const ProjectCard = ({
@@ -27,8 +27,8 @@ const ProjectCard = ({
 
   const isPlaceholder = cardTitle === 'show-placeholder';
 
-  const onclick = (e:any) => {
-    if(e.target.ariaLabel === 'Expand') return;
+  const onclick = (e: any) => {
+    if (e.target.ariaLabel === 'Expand') return;
     if (url) window.open(url);
   };
 
@@ -36,6 +36,7 @@ const ProjectCard = ({
     <Card cover={<img alt={imgAlt} src={imgSrc} />}>
       <Meta
         avatar={<Avatar src={avatarSrc} />}
+        // title={<Paragraph ellipsis={{ rows: 2 }}>{cardTitle}</Paragraph>}
         title={cardTitle}
         description={
           <Paragraph
@@ -50,16 +51,16 @@ const ProjectCard = ({
     </Card>
   );
 
-    return (
-      <div
-        className={`cc-project-card ${
-          isPlaceholder ? 'card-placeholder' : ''
-        } ${url?'has-click-through':''}`}
-        onClick={onclick}
-      >
-        {isPlaceholder ? <Card>+</Card> : <ContentCard />}
-      </div>
-    );
+  return (
+    <div
+      className={`cc-project-card ${isPlaceholder ? 'card-placeholder' : ''} ${
+        url ? 'has-click-through' : ''
+      }`}
+      onClick={onclick}
+    >
+      {isPlaceholder ? <Card>+</Card> : <ContentCard />}
+    </div>
+  );
 };
 
 export default ProjectCard;
