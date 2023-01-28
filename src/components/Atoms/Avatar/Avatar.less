@@ -1,24 +1,24 @@
 .cc-avatar {
   &.profile-pic {
     position: relative;
+    width: 200px;
+    flex: 0 0 200px;
+    padding: 12px;
+    border-color: var(--profile-pic-bg-bkp);
     background: var(--profile-pic-bg-bkp);
     background: var(--profile-pic-bg);
     box-shadow: var(--profile-pic-outer-shadow);
-    border-color: var(--profile-pic-bg-bkp);
-    padding: 12px;
-    flex: 0 0 200px;
-    width: 200px;
 
     &::after {
-      box-shadow: var(--profile-pic-inner-shadow);
-      content: '';
-      display: block;
-      height: calc(100% - 24px);
       position: absolute;
       top: 50%;
-      transform: translateY(-87px);
+      display: block;
       width: calc(100% - 24px);
+      height: calc(100% - 24px);
       border-radius: 50%;
+      box-shadow: var(--profile-pic-inner-shadow);
+      content: '';
+      transform: translateY(-87px);
     }
 
     img {

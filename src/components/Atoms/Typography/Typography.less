@@ -1,12 +1,35 @@
 .ant-typography {
   // font-family: var(--default-font);
   color: var(--body-text-default);
-}
-a.ant-typography-expand,
-a.ant-typography {
-  color: var(--link-item) !important;
 
-  &:hover {
-    color: var(--link-item-hover) !important;
+  &.input-label {
+    display: block;
+    margin: var(--input-label-margin);
+    color: var(--input-label);
+    font-size: var(--font-size-body-small);
+    font-weight: var(--font-weight-bold);
+
+    .input-label--required {
+      margin-left: 4px;
+      color: var(--input-field-label-required);
+    }
+
+    .input-label--optional {
+      margin-left: 8px;
+      font-size: var(--font-size-body-xsmall);
+      font-weight: var(--font-weight-regular);
+    }
+  }
+}
+
+a {
+
+  &.ant-typography-expand,
+  &.ant-typography {
+    color: var(--link-item) !important;
+
+    &:hover {
+      color: var(--link-item-hover) !important;
+    }
   }
 }

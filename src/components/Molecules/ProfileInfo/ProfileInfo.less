@@ -1,11 +1,9 @@
 .cc-contact-info {
   --arrow-height: 13px;
-      
+
   min-width: 446px;
 
-  .ant-typography {
-    font-family: var(--default-font);
-  }
+
 
   .link-parts(@bg-col, @text-col) {
     background-color: @bg-col;
@@ -24,6 +22,10 @@
     border-radius: var(--container-radius);
     z-index: 2;
     padding-bottom: 32px;
+
+    .ant-typography {
+      font-family: var(--default-font);
+    }
 
     .ant-card-body {
       padding-left: 0;
@@ -81,11 +83,59 @@
           color: var(--accent-first);
         }
       }
-    }
 
+      p {
+        padding-bottom: 16px;
+      }
+    }
   }
 
-  p {
-    padding-bottom: 16px;
+  .actionable-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+
+  .cc-icon-button-strip {}
+
+  .cc-switch {
+    margin-left: 32px;
+
+    .ant-switch {
+      .ant-switch-handle {
+        &::before {
+          background-color: var(--profile-pic-bg-bkp);
+          box-shadow: var(--switch-handle-shadow);
+        }
+      }
+
+      .ant-switch-inner {
+        box-shadow: var(--switch-inner-shadow);
+        background: var(--app-background);
+      }
+
+      &.ant-switch-checked {
+        .ant-switch-handle {
+          &::before {
+            background-color: var(--accent-first);
+
+          }
+        }
+      }
+    }
+
+    .cc-switch__with-label {
+      .ant-typography {
+        &.input-label {
+          color: var(--link-item);
+
+          &:hover {
+            color: var(--link-item-hover);
+          }
+        }
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@ import { Avatar, Typography, Card  } from '../../index';
 
 import './ProjectCard.less';
 
-const { Paragraph, Text } = Typography;
+const { Paragraph } = Typography;
 const { Meta } = Card;
 
 interface ProjectCardProps {

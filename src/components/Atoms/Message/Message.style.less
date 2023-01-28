@@ -1,7 +1,7 @@
 
 
 .ant-message-notice {
-  .messageColors(@bg-color, @item-color){
+  .message-colors(@bg-color, @item-color){
     .ant-message-notice-content {
       background-color: @bg-color;
       .anticon {
@@ -9,20 +9,20 @@
       } 
     } 
   }
-  
+
   &.ant-message-notice-success{
-   .messageColors(var(--background-success),var(--success-item-color))
+   .message-colors( var(--background-success),var(--success-item-color))
   }
   
   &.ant-message-notice-error{
-   .messageColors( var(--background-error),var(--error-item-color));
+   .message-colors( var(--background-error),var(--error-item-color));
   }
   
   &.ant-message-notice-warning{
-   .messageColors(var(--background-warning),var(--warning-item-color));
+   .message-colors(var(--background-warning),var(--warning-item-color));
   }
   
   &.ant-message-notice-info{
-   .messageColors( var(--background-info),var(--info-item-color));
+   .message-colors( var(--background-info),var(--info-item-color));
   }
 }

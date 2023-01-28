@@ -1,17 +1,27 @@
 .theme-1 {
   // fonts
-  --default-font: monaco,
-    monospace,
-    monospace;
+  --default-font: -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
   --alternate-font: monaco,
     monospace,
     monospace;
+  --icon-font: 'awethentique';
   // colors
-  --body-text-default: #ffffff;
-  --text-secondary:#888888;
-  --accent-first: #F2C94C;
-  --accent-second: #2F80ED;
-  --accent-third: #000000;
+  --body-text-default: #fff;
+  --text-secondary: #888;
+  --accent-first: #f2c94c;
+  --accent-second: #2f80ed;
+  --accent-third: #000;
   --link-item: var(--accent-second);
   --link-item-hover: var(--accent-first);
   --link-item-first-bg: #00398a;
@@ -21,9 +31,13 @@
   --shadow-center: #9c9c9c;
   --profile-pic-bg-bkp: #333740;
 
-  --popover-bg:  #000000ed;
+  --popover-bg: #000000ed;
   --popover-text: var(--body-text-default);
 
+  --input-label: var(--body-text-default);
+  --input-label-available: #6f747d;
+  --input-label-margin: 0 0 4px 12px;
+  --input-field-label-required: #eb905b;
   --error-item-color: #e52841;
   --success-item-color: #01934d;
   --warning-item-color: #e87c3e;
@@ -33,9 +47,26 @@
   --background-success: #ddf4e9;
   --background-warning: #f7e8e0;
 
+  --font-size-heading-xxxlarge: 48px;
+  --font-size-heading-xxxlarge-line-height: 56px;
+  --font-size-heading-xxlarge: 40px;
+  --font-size-heading-xxlarge-line-height: 48px;
+  --font-size-heading-xlarge: 32px;
+  --font-size-heading-xlarge-line-height: 40px;
+  --font-size-heading-large: 24px;
+  --font-size-heading-large-line-height: 32px;
+  --font-size-heading-medium: 20px;
+  --font-size-heading-medium-line-height: 28px;
+  --font-size-body: 16px;
+  --font-size-body-line-height: 24px;
+  --font-size-body-small: 14px;
+  --font-size-body-small-line-height: 20px;
+  --font-size-body-xsmall: 12px;
+  --font-size-body-xsmall-line-height: 16px;
+
   --container-radius: 18px;
   // shadows
-  --card-shadow: inset -4px 0px 12px #f2c94c17,
+  --card-shadow: inset -4px 0 12px #f2c94c17,
     inset 4px 4px 8px #000000ed;
   --profile-pic-inner-shadow: inset 4px 4px 12px 0 #00000085;
   --project-card-cover: inset 0 0 0 100vmax #101011cc;
@@ -44,7 +75,7 @@
   --icon-button-shadow:  -5px -5px 10px #0d0e0f,
     5px 5px 10px #1d1e21;
     
-    // gradients
+  // gradients
   --icon-button-bg: linear-gradient(315deg, #131416, #16181a);
   --slit-gradient: linear-gradient(90deg, var(--app-background) 0%, var(--shadow-mid-out) 25%, var(--shadow-center) 50%, var(--shadow-mid-out) 75%, var(--app-background) 100%);
   --profile-pic-bg: linear-gradient(145deg, var(--profile-pic-bg-bkp), #919eb9);

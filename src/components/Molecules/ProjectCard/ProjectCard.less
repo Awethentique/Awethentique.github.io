@@ -1,9 +1,10 @@
 .cc-project-card {
   --cover-radius: var(--container-radius) var(--container-radius) 0 0;
   --after-sizes: calc(100% + 1px);
-
-  max-width: 300px;
+  --icon-font-size: 8vw;
+  
   min-width: 28vw;
+  max-width: 300px;
   border-radius: var(--container-radius);
   transition: all 0.3s;
 
@@ -13,34 +14,36 @@
     .ant-card {
       .ant-card-cover {
         &::after {
-          content: '\e80d';
-          font-family: "awethentique";
-          font-size: 8vw;
           position: absolute;
-          left: 50%;
           top: 50%;
+          left: 50%;
           color: var(--link-item);
+          content: '\e80d';
+          font-family: var(--icon-font);
+          font-size: var(--icon-font-size);
           transform: translate(-31px, -70px);
           transition: all 0.3s;
         }
       }
+
       .ant-card-meta-title {
-        color: var(--link-item);    
-        white-space: initial;
         position: relative;
+        color: var(--link-item);
+        white-space: initial;
       }
     }
 
     &:hover {
-      transform: scale(1.1);
       box-shadow: var(--profile-pic-outer-shadow);
+      transform: scale(1.1);
 
       .ant-card {
         .ant-card-cover {
-          &:before {
+          &::before {
             opacity: 0.2;
           }
-           &::after {
+
+          &::after {
             left: 60%;
           }
         }
@@ -58,27 +61,27 @@
 
 
     .ant-card-cover {
-      border-radius: var(--cover-radius);
       position: relative;
       box-sizing: border-box;
-      border: none;
+      border: 0;
+      border-radius: var(--cover-radius);
 
       img {
-        border-radius: var(--cover-radius);
         box-sizing: border-box;
-        border: none;
+        border: 0;
+        border-radius: var(--cover-radius);
       }
 
-      &:before {
-        content: '';
-        display: block;
+      &::before {
         position: absolute;
         top: 0;
+        display: block;
         width: var(--after-sizes);
         height: var(--after-sizes);
-        transition: all 0.3s;
         border-radius: var(--cover-radius);
         box-shadow: var(--project-card-cover);
+        content: '';
+        transition: all 0.3s;
       }
     }
   }
