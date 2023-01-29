@@ -1,0 +1,29 @@
+{
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-order"
+    ],
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-idiomatic-order"
+    ],
+    "rules": {
+        "rule-empty-line-before":  ["always", {
+            except: [
+              "after-comment", 
+              "inside-block-and-after-rule", 
+              "inside-block", 
+              "first-nested"
+            ]
+          }],
+        "indentation": 2,
+        "max-nesting-depth": 7,
+        "selector-max-compound-selectors": 6,
+        "block-no-empty": null,
+        "font-weight-notation": null,
+        "order/properties-alphabetical-order": null,
+        "scss/at-mixin-pattern": null,
+        "selector-class-pattern": null,
+        "selector-no-qualifying-type": [true, {ignore: ["attribute", "class"]}]
+    }
+}

@@ -1,31 +1,58 @@
 .app-header {
-  // background-image: url('../../../assets/images/header-bg.png');
-  // background-repeat: no-repeat;
-  // background-position: right;
+  position: relative;
 
   .app-header-wrapper {
-    display: flex;
     position: relative;
-    padding: 32px 32px 44px 32px;
-    gap: 32px;
-    color: #fff;
-
-    .profile-info {
-      .ant-typography {
-        margin: 8px 0 4px 0;
-      }
-    }
-
-    .contact-info {
-      display: flex;
-      gap: 8px;
-    }
+    display: flex;
+    padding: 3% 3% 44px;
+    gap: 3%;
   }
 
   .header-bg-img {
     position: absolute;
+    z-index: 1;
     top: 0;
     right: 0;
-    z-index: 1;
+    width: 57%;
+    height: 341px;
+    background-image: url('../../../assets/images/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s;
+  }
+}
+
+// app-header Mobile Queries
+
+@media screen and (max-width: 1162px) {
+  .app-header {
+    .header-bg-img {
+      right: -180px;
+      opacity: 0.2;
+    }
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .app-header {
+    .header-bg-img {
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .app-header {
+    .app-header-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 8% 6%;
+
+      .cc-avatar {
+        &.profile-pic {
+          margin-bottom: 10%;
+        }
+      }
+    }
   }
 }

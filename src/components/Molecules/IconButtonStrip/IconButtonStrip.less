@@ -1,0 +1,25 @@
+.cc-icon-button-strip {
+  display: flex;
+  gap: 16px;
+
+  .cc-icon {
+    z-index: 2;
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--accent-second);
+    transition: all 0.3s;
+
+    &:hover {
+      background: var(--profile-pic-bg);
+      background: var(--icon-button-bg);
+      box-shadow: var(--icon-button-shadow);
+      color: var(--accent-first);
+    }
+  }
+}

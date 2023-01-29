@@ -1,29 +1,29 @@
 .cc-slit {
   position: relative;
-  top: -28px;
+  top: -2.7vw;
 
   &::after,
   &::before {
-    content: '';
     display: block;
     margin: 0 auto;
+    content: '';
   }
 
   &::before {
-    height: 3px;
-    width: 80%;
-    background: var(--slit-gradient);
-    transform: translateY(25px);
-    filter: blur(6px);
     position: relative;
+    width: 80%;
+    height: 3px;
+    background: var(--slit-gradient);
+    filter: blur(6px);
+    transform: translateY(25px);
   }
 
   &::after {
-    height: inherit;
-    background: inherit;
     width: 100%;
-    transform: translateY(0);
-    background: var(--app-background);
+    height: inherit;
     height: 20px;
+    background: inherit;
+    background: var(--app-background);
+    transform: translateY(0);
   }
 }

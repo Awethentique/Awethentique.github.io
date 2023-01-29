@@ -1,25 +1,30 @@
 import React from 'react';
-import { Typography, Icon, Card } from '../../index';
-import './ContactInfo.less';
+import { Typography, IconButtonStrip, Card } from '../../index';
+import type { ButtonData } from '../IconButtonStrip/IconButtonStrip';
 
-interface ContactInfoProps {
+import './ProfileInfo.less';
+
+interface ProfileInfoProps {
   linkUrl: string;
   userName: string;
   role: string;
   msg: string;
   className?: string;
+  buttonData?: ButtonData[];
 }
 
-const { Text, Link } = Typography;
+const { Text } = Typography;
 
-const ContactInfo = ({
+const ProfileInfo = ({
   linkUrl,
   userName,
   role,
   msg,
   className = '',
-}: ContactInfoProps) => {
+  buttonData,
+}: ProfileInfoProps) => {
   const linkParts = linkUrl.split(' ');
+
   return (
     <div className={`cc-contact-info  ${className}`}>
       <Card>
@@ -41,31 +46,11 @@ const ContactInfo = ({
         <Text className="msg-label">WARNING:</Text>
         <Text className="msg">{msg}</Text>
       </Card>
-      <div className="contact-info">
-        <Icon
-          fontIcon="awethentique-mail"
-          popOverTitle="Send me an email"
-          popOverContent={
-            <Link href="mailto:ritesh.makan@gmail.com" target="_blank">
-              ritesh.makan@gmail.com
-            </Link>
-          }
-        />
-        <Icon
-          fontIcon="awethentique-linkedin-rect"
-          popOverTitle="Find me on LinkedIn"
-          popOverContent={
-            <Link
-              href="https://www.linkedin.com/in/riteshmakan/"
-              target="_blank"
-            >
-              in/riteshmakan
-            </Link>
-          }
-        />
+      <div className="actionable-items">
+      <IconButtonStrip data={buttonData} />
       </div>
     </div>
   );
 };
 
-export default ContactInfo;
+export default ProfileInfo;

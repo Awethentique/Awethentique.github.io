@@ -1,5 +1,5 @@
 .cc-popover {
-  --antd-arrow-background-color: #000000bf;
+  --antd-arrow-background-color: var(--popover-bg);
 
   // &:after {
   //   content: '';
@@ -16,8 +16,13 @@
   .ant-popover-inner {
     background-color: var(--antd-arrow-background-color);
 
-    .ant-popover-title {
-      color: #fff;
+    .ant-popover-title,
+    .ant-popover-content {
+      color: var(--popover-text);
+    }
+
+    .ant-popover-inner-content {
+      color: var(--text-secondary);
     }
 
   }

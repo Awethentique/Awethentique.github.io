@@ -1,43 +1,52 @@
 .cc-project-card {
   --cover-radius: var(--container-radius) var(--container-radius) 0 0;
   --after-sizes: calc(100% + 1px);
-
-  max-width: 300px;
+  --icon-font-size: 8vw;
+  border-radius: var(--container-radius);
   transition: all 0.3s;
 
   &.has-click-through {
     cursor: pointer;
 
     .ant-card {
-      .ant-card-meta-title {
-        color: var(--link-item);
-
+      .ant-card-cover {
         &::after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          color: var(--link-item);
           content: '\e80d';
-          font-family: "awethentique";
-          margin-left: 8px;
+          font-family: var(--icon-font);
+          font-size: var(--icon-font-size);
+          transform: translate(-31px, -70px);
           transition: all 0.3s;
         }
+      }
+
+      .ant-card-meta-title {
+        position: relative;
+        color: var(--link-item);
+        white-space: initial;
       }
     }
 
     &:hover {
-      transform: scale(1.1);
       box-shadow: var(--profile-pic-outer-shadow);
+      transform: scale(1.1);
 
       .ant-card {
         .ant-card-cover {
-          &:after {
+          &::before {
             opacity: 0.2;
+          }
+
+          &::after {
+            left: 60%;
           }
         }
 
         .ant-card-meta-title {
           color: var(--link-item-hover) !important;
-
-          &::after {
-            margin-left: 22px;
-          }
         }
       }
     }
@@ -49,33 +58,27 @@
 
 
     .ant-card-cover {
-      border-radius: var(--cover-radius);
       position: relative;
       box-sizing: border-box;
-      border: none;
+      border: 0;
+      border-radius: var(--cover-radius);
 
       img {
-        border-radius: var(--cover-radius);
-        border: 1px solid #fff;
         box-sizing: border-box;
-        border: none;
-        box-shadow: inset 0 0 0 100vmax rgba(102, 76, 202, 0.65);
+        border: 0;
+        border-radius: var(--cover-radius);
       }
 
-      &:after {
-        content: '';
-        display: block;
+      &::before {
         position: absolute;
         top: 0;
+        display: block;
         width: var(--after-sizes);
         height: var(--after-sizes);
-        transition: all 0.3s;
-        // background: var(--accent-third);
-        // opacity: 0.85;
         border-radius: var(--cover-radius);
-        box-shadow: inset 0 0 0 100vmax #101011cc;
-
-        // background: linear-gradient(145deg, #1c1d1f, #101011);
+        box-shadow: var(--project-card-cover);
+        content: '';
+        transition: all 0.3s;
       }
     }
   }

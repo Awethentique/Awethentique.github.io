@@ -1,38 +1,21 @@
 @import './theme1-variables.less';
+
 html,
 body {
-  margin: 0;
+  width: 100%;
   height: 100%;
-}
-
-.app {
-  height: 100vh;
   background: var(--app-background);
 }
 
 .custom-font {
-  font-family: "awethentique";
-  font-style: normal;
-  font-weight: normal;
-  speak: never;
-
   display: inline-block;
-  text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
+  margin-right: 0.2em;
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
+  font-family: var(--icon-font);
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -40,5 +23,17 @@ body {
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  font-weight: normal;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  speak: never;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
 }
-// @media 955px

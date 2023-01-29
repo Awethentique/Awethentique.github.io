@@ -1,0 +1,292 @@
+.cc-contact-info {
+  --arrow-height: 13px;
+
+  min-width: 446px;
+
+  .link-parts(@bg-col, @text-col) {
+    background-color: @bg-col;
+    color: @text-col;
+
+    &:after {
+      border-left-color: @bg-col;
+    }
+  }
+
+  // styling 
+  .cc-card {
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--container-radius);
+    z-index: 2;
+    padding-bottom: 32px;
+
+    .ant-typography {
+      font-family: var(--alternate-font);
+    }
+
+    .ant-card-body {
+      padding-left: 0;
+
+      .ant-typography {
+
+        &.link-parts-0,
+        &.link-parts-1,
+        &.link-parts-2 {
+          padding: 4px 4px 4px 16px;
+          position: relative;
+
+          &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: var(--arrow-height) solid transparent;
+            border-bottom: var(--arrow-height) solid transparent;
+
+            border-left: var(--arrow-height) solid;
+            position: absolute;
+            right: -13px;
+            top: 0;
+            z-index: 1;
+          }
+        }
+
+        &.link-parts-0 {
+          .link-parts(var(--accent-third), var(--accent-first));
+        }
+
+        &.link-parts-1 {
+          .link-parts(var(--accent-second), var(--accent-third));
+        }
+
+        &.link-parts-2 {
+          .link-parts(var(--accent-first), var(--accent-third));
+          margin-right: 16px;
+
+          .anticon-copy {
+            color: var(--link-item-first-bg);
+          }
+        }
+
+        &.user-name-label,
+        &.msg-label,
+        &.role-label {
+          color: var(--accent-first);
+          padding-right: 4px;
+          padding-left: 16px;
+        }
+
+        &.msg {
+          color: var(--accent-first);
+          .animated-cursor();
+        }
+      }
+
+      p {
+        padding-bottom: 16px;
+      }
+    }
+  }
+
+  .actionable-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+
+  .cc-icon-button-strip {}
+
+  .cc-switch {
+    margin-left: 32px;
+
+    .ant-switch {
+      .ant-switch-handle {
+        &::before {
+          background-color: var(--profile-pic-bg-bkp);
+          box-shadow: var(--switch-handle-shadow);
+        }
+      }
+
+      .ant-switch-inner {
+        box-shadow: var(--switch-inner-shadow);
+        background: var(--app-background);
+      }
+
+      &.ant-switch-checked {
+        .ant-switch-handle {
+          &::before {
+            background-color: var(--accent-first);
+
+          }
+        }
+      }
+    }
+
+    .cc-switch__with-label {
+      .ant-typography {
+        &.input-label {
+          color: var(--link-item);
+
+          &:hover {
+            color: var(--link-item-hover);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+// Animation keyframes
+
+.animated-cursor {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    display: inline-block;
+    background-color: var(--profile-pic-bg-bkp);
+    vertical-align: top;
+    width: 10px;
+    height: 18px;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+
+// Mixin for smaller views to hide the command background
+.cc-card-mobile {
+  .ant-card-body {
+    padding: 16px;
+
+    .ant-typography {
+
+      &.link-parts-0,
+      &.link-parts-1,
+      &.link-parts-2 {
+        display: inline-block;
+        padding: 0;
+        background: none;
+
+        &::after {
+          content: initial;
+        }
+
+        &.link-parts-0 {}
+
+        &.link-parts-1 {
+          color: var(--accent-second);
+        }
+
+        &.link-parts-2 {
+          color: var(--accent-first);
+        }
+      }
+
+      &.user-name-label,
+      &.msg-label,
+      &.role-label {
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// cc-card Mobile Queries
+@media screen and (max-width: 708px) and (min-width: 496px) {
+  .cc-contact-info {
+    min-width: 90vw;
+
+    .cc-card {
+      .cc-card-mobile();
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 496px) {
+  .app-header {
+    .app-header-wrapper {
+      justify-content: space-between;
+
+      .cc-contact-info {
+        min-width: 57vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 496px) and (orientation: portrait) {
+  .cc-contact-info {
+    min-width: 90vw;
+
+    .actionable-items {
+      display: flex;
+      justify-content: center;
+
+      .cc-icon-button-strip {
+        gap: 10vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 496px) and (orientation: portrait) {
+  .cc-contact-info {
+    .cc-card {
+      .cc-card-mobile();
+    }
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .cc-contact-info {
+    .cc-card {
+      .ant-card-body {
+        .ant-typography {
+          &.msg {
+            &:after {
+              content: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+}
