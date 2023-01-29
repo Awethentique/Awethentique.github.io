@@ -46,7 +46,9 @@ const ProfileInfo = ({
         <Text className="msg-label">WARNING:</Text>
         <Text className="msg">{msg}</Text>
       </Card>
+      <div className="actionable-items">
       <IconButtonStrip data={buttonData} />
+      </div>
     </div>
   );
 };

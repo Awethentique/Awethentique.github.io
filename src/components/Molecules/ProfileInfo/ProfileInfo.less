@@ -3,8 +3,6 @@
 
   min-width: 446px;
 
-
-
   .link-parts(@bg-col, @text-col) {
     background-color: @bg-col;
     color: @text-col;
@@ -136,6 +134,95 @@
           }
         }
       }
+    }
+  }
+
+}
+
+// Mixin for smaller views to hide the command background
+.cc-card-mobile {
+  .ant-card-body {
+    padding: 16px;
+
+    .ant-typography {
+
+      &.link-parts-0,
+      &.link-parts-1,
+      &.link-parts-2 {
+        display: inline-block;
+        padding: 0;
+        background: none;
+
+        &::after {
+          content: initial;
+        }
+
+        &.link-parts-0 {}
+
+        &.link-parts-1 {
+          color: var(--accent-second);
+        }
+
+        &.link-parts-2 {
+          color: var(--accent-first);
+        }
+      }
+
+      &.user-name-label,
+      &.msg-label,
+      &.role-label {
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// cc-card Mobile Queries
+@media screen and (max-width: 622px) and (min-width: 577px) {
+  .cc-contact-info {
+    min-width: 90vw;
+
+    .cc-card {
+      .cc-card-mobile();
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .app-header {
+    .app-header-wrapper {
+      justify-content: space-between;
+
+      .cc-contact-info {
+        min-width: 57vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .cc-contact-info {
+    min-width: 90vw;
+
+
+
+    .actionable-items {
+      display: flex;
+      justify-content: center;
+
+      .cc-icon-button-strip {
+        gap: 10vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 408px) and (orientation: portrait) {
+  .cc-contact-info {
+    .cc-card {
+      .cc-card-mobile();
     }
   }
 }

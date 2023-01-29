@@ -1,4 +1,6 @@
 .app-header {
+  position: relative;
+
   .app-header-wrapper {
     position: relative;
     display: flex;
@@ -16,5 +18,41 @@
     background-image: url('../../../assets/images/header-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.3s;
+  }
+}
+
+// app-header Mobile Queries
+
+@media screen and (max-width: 1162px) {
+  .app-header {
+    .header-bg-img {
+      right: -180px;
+      opacity: 0.2;
+    }
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .app-header {
+    .header-bg-img {
+      opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) and (orientation: portrait) {
+  .app-header {
+    .app-header-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 8% 6%;
+
+      .cc-avatar {
+        &.profile-pic {
+          margin-bottom: 10%;
+        }
+      }
+    }
   }
 }
