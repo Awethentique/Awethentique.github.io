@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d0c560b8.css",
-    "main.js": "/static/js/main.feed3118.js",
+    "main.js": "/static/js/main.46bc232b.js",
     "static/js/529.66009138.chunk.js": "/static/js/529.66009138.chunk.js",
     "static/media/atomic-design-header-dark.svg": "/static/media/atomic-design-header-dark.d1c6f4b0526732e77e02.svg",
+    "static/media/HTML5-periodic-table.png": "/static/media/HTML5-periodic-table.f91aa8941b4b2057a568.png",
+    "static/media/UXE-assessment.png": "/static/media/UXE-assessment.1908a74c542c4c9b79a0.png",
     "static/media/atomic-design-header-light.svg": "/static/media/atomic-design-header-light.cdf54b31b20ca032970c.svg",
-    "static/media/HTML5-periodic-table.png": "/static/media/HTML5-periodic-table.55187bd6bbc9d69352be.png",
-    "static/media/UXE-assessment.png": "/static/media/UXE-assessment.55a7822b1513271e3879.png",
     "static/media/atomic-design.png": "/static/media/atomic-design.b31d51b0d90e26d7ccdd.png",
     "static/media/me.jpg": "/static/media/me.a26a180f093f2181ed81.jpg",
-    "static/media/assessment.png": "/static/media/assessment.e45a1c4c016632e6bba1.png",
+    "static/media/assessment.png": "/static/media/assessment.5154f272c758899b7b6f.png",
     "static/media/HTML5.png": "/static/media/HTML5.ab6739797326e72e518b.png",
     "static/media/awethentique.eot?68997034": "/static/media/awethentique.b4ea0791dec091df750e.eot",
     "static/media/awethentique.ttf?68997034": "/static/media/awethentique.fd3475aec65f79376b7d.ttf",
@@ -17,11 +17,11 @@
     "static/media/awethentique.woff?68997034": "/static/media/awethentique.84cb4fe93bd714a3cf06.woff",
     "index.html": "/index.html",
     "main.d0c560b8.css.map": "/static/css/main.d0c560b8.css.map",
-    "main.feed3118.js.map": "/static/js/main.feed3118.js.map",
+    "main.46bc232b.js.map": "/static/js/main.46bc232b.js.map",
     "529.66009138.chunk.js.map": "/static/js/529.66009138.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0c560b8.css",
-    "static/js/main.feed3118.js"
+    "static/js/main.46bc232b.js"
   ]
 }
