@@ -15,16 +15,18 @@
     right: 0;
     width: 57%;
     height: 341px;
-    background-image: url('../../../assets/images/header-bg.png');
+    background-image: var(--header-image);
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: 470px;
+    background-position: right 12% center;
     transition: all 0.3s;
   }
 }
 
 // app-header Mobile Queries
 
-@media screen and (max-width: 1162px) {
+@media screen and (max-width: 1219px) {
   .app-header {
     .header-bg-img {
       right: -180px;
@@ -33,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 972px) {
+@media screen and (max-width: 992px) {
   .app-header {
     .header-bg-img {
       opacity: 0;

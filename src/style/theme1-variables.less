@@ -30,10 +30,12 @@
   --shadow-mid-out: #384051;
   --shadow-center: #9c9c9c;
   --profile-pic-bg-bkp: #333740;
+  --switch-handle: var(--profile-pic-bg-bkp);
+  --cursor-color: var(--profile-pic-bg-bkp);
 
   --popover-bg: #000000ed;
   --popover-text: var(--body-text-default);
-
+  --switch-checked-color: var(--accent-second);
   --input-label: var(--body-text-default);
   --input-label-available: #6f747d;
   --input-label-margin: 0 0 4px 12px;
@@ -72,12 +74,17 @@
   --project-card-cover: inset 0 0 0 100vmax #101011cc;
   --profile-pic-outer-shadow: 20px 20px 40px #060708,
     -20px -20px 40px #2a2c30;
-  --icon-button-shadow:  -5px -5px 10px #0d0e0f,
+  --icon-button-shadow: -5px -5px 10px #0d0e0f,
     5px 5px 10px #1d1e21;
-    
+  --switch-handle-shadow: -8px -4px 8px 0px #2a2c30, 8px 4px 12px 0px #000000;
+  --switch-inner-shadow: -8px -4px 8px 0px #2a2c30, 8px 4px 12px 0px #000000, 4px 4px 4px 0px #00000085 inset, -4px -4px 4px 0px #2a2c30 inset;
+
   // gradients
   --icon-button-bg: linear-gradient(315deg, #131416, #16181a);
   --slit-gradient: linear-gradient(90deg, var(--app-background) 0%, var(--shadow-mid-out) 25%, var(--shadow-center) 50%, var(--shadow-mid-out) 75%, var(--app-background) 100%);
   --profile-pic-bg: linear-gradient(145deg, var(--profile-pic-bg-bkp), #919eb9);
   --profile-pic-bg: linear-gradient(145deg, var(--profile-pic-bg-bkp), #2d2e30);
+
+  //  Images
+  --header-image: url('../assets/images/atomic-design-header-dark.svg');
 }
