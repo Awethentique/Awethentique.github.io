@@ -51,6 +51,6 @@ export const contactButtonsData = [
       title: 'UXE assessment',
       description:
         'I was tasked to build a web page as an assessment for a job interview. Here I taught myself some new libraries.',
-      url: '/projects/UXE-assessment/index.html',
+      // url: '/projects/UXE-assessment/index.html',
     },
   ];

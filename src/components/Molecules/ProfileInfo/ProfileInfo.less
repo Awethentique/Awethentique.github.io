@@ -4,7 +4,7 @@
   min-width: 446px;
 
   .link-parts(@bg-col, @text-col) {
-    background-color: @bg-col;
+    background: @bg-col;
     color: @text-col;
 
     &:after {
@@ -51,7 +51,12 @@
         }
 
         &.link-parts-0 {
-          .link-parts(var(--accent-third), var(--accent-first));
+          .link-parts(var(--command-line-head), var(--accent-first));
+
+          &:after {
+            border-left-color: var(--accent-third);
+          }
+
         }
 
         &.link-parts-1 {
@@ -99,11 +104,12 @@
 
   .cc-switch {
     margin-left: 32px;
+    display: flex;
 
     .ant-switch {
       .ant-switch-handle {
         &::before {
-          background-color: var(--profile-pic-bg-bkp);
+          background-color: var(--switch-handle);
           box-shadow: var(--switch-handle-shadow);
         }
       }
@@ -124,8 +130,11 @@
     }
 
     .cc-switch__with-label {
-      .ant-typography {
-        &.input-label {
+      &.input-label {
+        height: 22px;
+        line-height: 22px;
+
+        .cc-icon {
           color: var(--link-item);
 
           &:hover {
@@ -135,7 +144,6 @@
       }
     }
   }
-
 }
 
 
@@ -151,7 +159,7 @@
     top: 0;
     right: -15px;
     display: inline-block;
-    background-color: var(--profile-pic-bg-bkp);
+    background-color: var(--cursor-color);
     vertical-align: top;
     width: 10px;
     height: 18px;

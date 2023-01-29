@@ -19,12 +19,6 @@
       "src": "websymbols"
     },
     {
-      "uid": "7e25a96981e6bd6b1592c409da293c45",
-      "css": "cloud",
-      "code": 59395,
-      "src": "websymbols"
-    },
-    {
       "uid": "26f5aa38f3889213334b3990b4ad483b",
       "css": "rss",
       "code": 59409,
@@ -35,24 +29,6 @@
       "css": "cog",
       "code": 59411,
       "src": "websymbols"
-    },
-    {
-      "uid": "72109d2fb3088d0e66ea6a9204297651",
-      "css": "spin1",
-      "code": 59440,
-      "src": "fontelico"
-    },
-    {
-      "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
-      "css": "spin2",
-      "code": 59441,
-      "src": "fontelico"
-    },
-    {
-      "uid": "2a6740fc2f9d0edea54205963f662594",
-      "css": "spin3",
-      "code": 59442,
-      "src": "fontelico"
     },
     {
       "uid": "9bd60140934a1eb9236fd7a8ab1ff6ba",
@@ -185,6 +161,42 @@
       "css": "up-open",
       "code": 59406,
       "src": "fontawesome"
+    },
+    {
+      "uid": "36ef9feb0754335302784521267a9ad4",
+      "css": "crown-plus",
+      "code": 59461,
+      "src": "fontelico"
+    },
+    {
+      "uid": "72109d2fb3088d0e66ea6a9204297651",
+      "css": "spin1",
+      "code": 59440,
+      "src": "fontelico"
+    },
+    {
+      "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
+      "css": "spin2",
+      "code": 59441,
+      "src": "fontelico"
+    },
+    {
+      "uid": "2a6740fc2f9d0edea54205963f662594",
+      "css": "spin3",
+      "code": 59442,
+      "src": "fontelico"
+    },
+    {
+      "uid": "0d03db7afd4857accf1821efdc8ea72b",
+      "css": "moon",
+      "code": 59399,
+      "src": "entypo"
+    },
+    {
+      "uid": "f8e120c48c070f8afd2d072651b4fb9f",
+      "css": "light-up",
+      "code": 59407,
+      "src": "entypo"
     }
   ]
 }

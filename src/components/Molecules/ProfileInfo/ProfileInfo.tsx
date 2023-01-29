@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography, IconButtonStrip, Card } from '../../index';
+import React, { useState } from 'react';
+import { Typography, IconButtonStrip, Card, Switch, Icon } from '../../index';
 import type { ButtonData } from '../IconButtonStrip/IconButtonStrip';
 
 import './ProfileInfo.less';
@@ -25,6 +25,15 @@ const ProfileInfo = ({
 }: ProfileInfoProps) => {
   const linkParts = linkUrl.split(' ');
 
+  const toggleDark = (checked: boolean) => {
+    if (checked) {
+      document.body.className = 'theme-1';
+    } else {
+      document.body.className = 'theme-2';
+    }
+    console.log(`switch to ${checked}`);
+  };
+
   return (
     <div className={`cc-contact-info  ${className}`}>
       <Card>
@@ -47,7 +56,13 @@ const ProfileInfo = ({
         <Text className="msg">{msg}</Text>
       </Card>
       <div className="actionable-items">
-      <IconButtonStrip data={buttonData} />
+        <IconButtonStrip data={buttonData} />
+        <Switch
+          defaultChecked
+          onChange={toggleDark}
+          labelRight={<Icon fontIcon="awethentique-moon" />}
+          labelLeft={<Icon fontIcon="awethentique-light-up" />}
+        />
       </div>
     </div>
   );
