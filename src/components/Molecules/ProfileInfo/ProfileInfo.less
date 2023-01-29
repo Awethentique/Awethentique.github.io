@@ -14,7 +14,6 @@
 
   // styling 
   .cc-card {
-    // width: 457px;
     background: var(--card-background);
     box-shadow: var(--card-shadow);
     border-radius: var(--container-radius);
@@ -22,7 +21,7 @@
     padding-bottom: 32px;
 
     .ant-typography {
-      font-family: var(--default-font);
+      font-family: var(--alternate-font);
     }
 
     .ant-card-body {
@@ -38,7 +37,6 @@
 
           &:after {
             content: '';
-            // display: inline-block;
             width: 0;
             height: 0;
             border-top: var(--arrow-height) solid transparent;
@@ -79,6 +77,7 @@
 
         &.msg {
           color: var(--accent-first);
+          .animated-cursor();
         }
       }
 
@@ -139,6 +138,57 @@
 
 }
 
+
+// Animation keyframes
+
+.animated-cursor {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    display: inline-block;
+    background-color: var(--profile-pic-bg-bkp);
+    vertical-align: top;
+    width: 10px;
+    height: 18px;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+}
+
+
 // Mixin for smaller views to hide the command background
 .cc-card-mobile {
   .ant-card-body {
@@ -179,7 +229,7 @@
 }
 
 // cc-card Mobile Queries
-@media screen and (max-width: 622px) and (min-width: 577px) {
+@media screen and (max-width: 708px) and (min-width: 496px) {
   .cc-contact-info {
     min-width: 90vw;
 
@@ -190,7 +240,7 @@
 }
 
 
-@media screen and (max-width: 768px) and (min-width: 576px) {
+@media screen and (max-width: 768px) and (min-width: 496px) {
   .app-header {
     .app-header-wrapper {
       justify-content: space-between;
@@ -202,11 +252,9 @@
   }
 }
 
-@media screen and (max-width: 576px) and (orientation: portrait) {
+@media screen and (max-width: 496px) and (orientation: portrait) {
   .cc-contact-info {
     min-width: 90vw;
-
-
 
     .actionable-items {
       display: flex;
@@ -219,10 +267,26 @@
   }
 }
 
-@media screen and (max-width: 408px) and (orientation: portrait) {
+@media screen and (max-width: 496px) and (orientation: portrait) {
   .cc-contact-info {
     .cc-card {
       .cc-card-mobile();
+    }
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .cc-contact-info {
+    .cc-card {
+      .ant-card-body {
+        .ant-typography {
+          &.msg {
+            &:after {
+              content: initial;
+            }
+          }
+        }
+      }
     }
   }
 }
