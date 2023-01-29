@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Typography, IconButtonStrip, Card, Switch, Icon } from '../../index';
 import type { ButtonData } from '../IconButtonStrip/IconButtonStrip';
 
