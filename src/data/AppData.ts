@@ -51,6 +51,6 @@ export const contactButtonsData = [
       title: 'UXE assessment',
       description:
         'I was tasked to build a pixel-perfect web page as an assessment for a job interview. Here I taught myself some new libraries while doing the assessment. The task was only to "build as you see" for a web-only desktop application. I got carried away with presenting my passion for building useful interfaces and including responsive, fluidly adaptive layouts across all mobile devices as well. ',
-      // url: '/projects/UXE-assessment/index.html',
+      url: '/projects/UXE-assessment/index.html',
     },
   ];

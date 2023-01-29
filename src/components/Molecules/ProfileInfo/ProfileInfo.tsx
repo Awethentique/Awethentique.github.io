@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typography, IconButtonStrip, Card, Switch, Icon } from '../../index';
 import type { ButtonData } from '../IconButtonStrip/IconButtonStrip';
+import { useLocalStorage } from '../../shared/local-storage';
 
 import './ProfileInfo.less';
 
@@ -23,15 +24,24 @@ const ProfileInfo = ({
   className = '',
   buttonData,
 }: ProfileInfoProps) => {
+  const [theme, setTheme] = useLocalStorage('theme', 'theme-1');
+
   const linkParts = linkUrl.split(' ');
+
+  useEffect(() => {
+    // storing input name
+    localStorage.setItem('theme', JSON.stringify(theme));
+    document.body.className = theme;
+  }, [theme]);
 
   const toggleDark = (checked: boolean) => {
     if (checked) {
       document.body.className = 'theme-1';
+      setTheme('theme-1');
     } else {
       document.body.className = 'theme-2';
+      setTheme('theme-2');
     }
-    console.log(`switch to ${checked}`);
   };
 
   return (
@@ -58,7 +68,7 @@ const ProfileInfo = ({
       <div className="actionable-items">
         <IconButtonStrip data={buttonData} />
         <Switch
-          defaultChecked
+          defaultChecked={theme === 'theme-1'}
           onChange={toggleDark}
           labelRight={<Icon fontIcon="awethentique-moon" />}
           labelLeft={<Icon fontIcon="awethentique-light-up" />}
