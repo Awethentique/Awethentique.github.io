@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1324600e.css",
-    "main.js": "/static/js/main.c672c290.js",
+    "main.css": "/static/css/main.827e5b54.css",
+    "main.js": "/static/js/main.60eb2f52.js",
     "static/js/529.66009138.chunk.js": "/static/js/529.66009138.chunk.js",
     "static/media/atomic-design-header-dark.svg": "/static/media/atomic-design-header-dark.d1c6f4b0526732e77e02.svg",
     "static/media/atomic-design-header-light.svg": "/static/media/atomic-design-header-light.cdf54b31b20ca032970c.svg",
@@ -11,16 +11,17 @@
     "static/media/me.jpg": "/static/media/me.a26a180f093f2181ed81.jpg",
     "static/media/assessment.png": "/static/media/assessment.e45a1c4c016632e6bba1.png",
     "static/media/HTML5.png": "/static/media/HTML5.ab6739797326e72e518b.png",
-    "static/media/awethentique.eot?16262836": "/static/media/awethentique.bc60da164e1ac453f98b.eot",
-    "static/media/awethentique.ttf?16262836": "/static/media/awethentique.7f6d1872c4005ef73a2b.ttf",
-    "static/media/awethentique.svg?16262836": "/static/media/awethentique.91f6d3c1c22fc5a7b097.svg",
+    "static/media/awethentique.eot?68997034": "/static/media/awethentique.b4ea0791dec091df750e.eot",
+    "static/media/awethentique.ttf?68997034": "/static/media/awethentique.fd3475aec65f79376b7d.ttf",
+    "static/media/awethentique.svg?68997034": "/static/media/awethentique.d23c2ac4b0251b5209b1.svg",
+    "static/media/awethentique.woff?68997034": "/static/media/awethentique.84cb4fe93bd714a3cf06.woff",
     "index.html": "/index.html",
-    "main.1324600e.css.map": "/static/css/main.1324600e.css.map",
-    "main.c672c290.js.map": "/static/js/main.c672c290.js.map",
+    "main.827e5b54.css.map": "/static/css/main.827e5b54.css.map",
+    "main.60eb2f52.js.map": "/static/js/main.60eb2f52.js.map",
     "529.66009138.chunk.js.map": "/static/js/529.66009138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1324600e.css",
-    "static/js/main.c672c290.js"
+    "static/css/main.827e5b54.css",
+    "static/js/main.60eb2f52.js"
   ]
 }
