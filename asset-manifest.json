@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.aca36eca.css",
+    "main.css": "/static/css/main.1324600e.css",
     "main.js": "/static/js/main.c672c290.js",
     "static/js/529.66009138.chunk.js": "/static/js/529.66009138.chunk.js",
     "static/media/atomic-design-header-dark.svg": "/static/media/atomic-design-header-dark.d1c6f4b0526732e77e02.svg",
@@ -15,12 +15,12 @@
     "static/media/awethentique.ttf?16262836": "/static/media/awethentique.7f6d1872c4005ef73a2b.ttf",
     "static/media/awethentique.svg?16262836": "/static/media/awethentique.91f6d3c1c22fc5a7b097.svg",
     "index.html": "/index.html",
-    "main.aca36eca.css.map": "/static/css/main.aca36eca.css.map",
+    "main.1324600e.css.map": "/static/css/main.1324600e.css.map",
     "main.c672c290.js.map": "/static/js/main.c672c290.js.map",
     "529.66009138.chunk.js.map": "/static/js/529.66009138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aca36eca.css",
+    "static/css/main.1324600e.css",
     "static/js/main.c672c290.js"
   ]
 }
