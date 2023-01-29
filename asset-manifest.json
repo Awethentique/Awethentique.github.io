@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.827e5b54.css",
-    "main.js": "/static/js/main.60eb2f52.js",
+    "main.css": "/static/css/main.1f72fa06.css",
+    "main.js": "/static/js/main.feed3118.js",
     "static/js/529.66009138.chunk.js": "/static/js/529.66009138.chunk.js",
     "static/media/atomic-design-header-dark.svg": "/static/media/atomic-design-header-dark.d1c6f4b0526732e77e02.svg",
     "static/media/atomic-design-header-light.svg": "/static/media/atomic-design-header-light.cdf54b31b20ca032970c.svg",
@@ -16,12 +16,12 @@
     "static/media/awethentique.svg?68997034": "/static/media/awethentique.d23c2ac4b0251b5209b1.svg",
     "static/media/awethentique.woff?68997034": "/static/media/awethentique.84cb4fe93bd714a3cf06.woff",
     "index.html": "/index.html",
-    "main.827e5b54.css.map": "/static/css/main.827e5b54.css.map",
-    "main.60eb2f52.js.map": "/static/js/main.60eb2f52.js.map",
+    "main.1f72fa06.css.map": "/static/css/main.1f72fa06.css.map",
+    "main.feed3118.js.map": "/static/js/main.feed3118.js.map",
     "529.66009138.chunk.js.map": "/static/js/529.66009138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.827e5b54.css",
-    "static/js/main.60eb2f52.js"
+    "static/css/main.1f72fa06.css",
+    "static/js/main.feed3118.js"
   ]
 }
