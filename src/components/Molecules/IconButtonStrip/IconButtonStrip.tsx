@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, Typography, message } from '../../index';
+import { Icon, Typography } from '../../index';
 import './IconButtonStrip.less';
 
 export type ButtonData = {
