@@ -4,8 +4,7 @@
         "stylelint-order"
     ],
     "extends": [
-        "stylelint-config-sass-guidelines",
-        "stylelint-config-idiomatic-order"
+        "stylelint-config-sass-guidelines"
     ],
     "rules": {
         "rule-empty-line-before":  ["always", {

@@ -1,28 +1,27 @@
-
-
 .ant-message-notice {
-  .message-colors(@bg-color, @item-color){
+  .message-colors(@bg-color, @item-color) {
     .ant-message-notice-content {
       background-color: @bg-color;
+
       .anticon {
         color: @item-color;
-      } 
-    } 
+      }
+    }
   }
 
-  &.ant-message-notice-success{
-   .message-colors( var(--background-success),var(--success-item-color))
+  &.ant-message-notice-success {
+    .message-colors(var(--background-success), var(--success-item-color))
   }
-  
-  &.ant-message-notice-error{
-   .message-colors( var(--background-error),var(--error-item-color));
+
+  &.ant-message-notice-error {
+    .message-colors(var(--background-error), var(--error-item-color));
   }
-  
-  &.ant-message-notice-warning{
-   .message-colors(var(--background-warning),var(--warning-item-color));
+
+  &.ant-message-notice-warning {
+    .message-colors(var(--background-warning), var(--warning-item-color));
   }
-  
-  &.ant-message-notice-info{
-   .message-colors( var(--background-info),var(--info-item-color));
+
+  &.ant-message-notice-info {
+    .message-colors(var(--background-info), var(--info-item-color));
   }
 }
