@@ -26,6 +26,15 @@ jobs:
       - name: Install 🔧
         run: npm install --cache /tmp/empty-cache
 
-      - name: Build 🏗️ and Deploy to GH Pages 🚀
+      - name: Build 🏗️
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm run deploy-to-io
+          npm run build
+
+      - name: Deploy to GH Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with: 
+          branch: gh-pages
+          folder: 'build'
+          token: ${{ secrets.PUSH_TOKEN }}
