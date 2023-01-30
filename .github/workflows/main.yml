@@ -28,7 +28,7 @@ jobs:
 
       - name: Build 🏗️
         run: |
-          npm run deploy-to-io
+          npm run predeploy
 
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
