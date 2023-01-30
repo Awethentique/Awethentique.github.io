@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c91d11c.css",
-    "main.js": "/static/js/main.048390ca.js",
+    "main.css": "/static/css/main.3b03cdff.css",
+    "main.js": "/static/js/main.c4395492.js",
     "static/js/529.66009138.chunk.js": "/static/js/529.66009138.chunk.js",
     "static/media/atomic-design-header-dark.svg": "/static/media/atomic-design-header-dark.d1c6f4b0526732e77e02.svg",
     "static/media/HTML5-periodic-table.png": "/static/media/HTML5-periodic-table.f91aa8941b4b2057a568.png",
@@ -16,12 +16,12 @@
     "static/media/awethentique.svg?68997034": "/static/media/awethentique.d23c2ac4b0251b5209b1.svg",
     "static/media/awethentique.woff?68997034": "/static/media/awethentique.84cb4fe93bd714a3cf06.woff",
     "index.html": "/index.html",
-    "main.6c91d11c.css.map": "/static/css/main.6c91d11c.css.map",
-    "main.048390ca.js.map": "/static/js/main.048390ca.js.map",
+    "main.3b03cdff.css.map": "/static/css/main.3b03cdff.css.map",
+    "main.c4395492.js.map": "/static/js/main.c4395492.js.map",
     "529.66009138.chunk.js.map": "/static/js/529.66009138.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c91d11c.css",
-    "static/js/main.048390ca.js"
+    "static/css/main.3b03cdff.css",
+    "static/js/main.c4395492.js"
   ]
 }
