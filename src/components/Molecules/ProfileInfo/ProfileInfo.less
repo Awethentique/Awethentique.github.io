@@ -109,7 +109,7 @@
     .ant-switch {
       .ant-switch-handle {
         &::before {
-          background-color: var(--switch-handle);
+          background-color: var(--accent-first);
           box-shadow: var(--switch-handle-shadow);
         }
       }
@@ -123,17 +123,23 @@
         .ant-switch-handle {
           &::before {
             background-color: var(--accent-first);
-
           }
         }
       }
     }
 
-    .cc-switch__with-label {
-      &.input-label {
-        height: 22px;
-        line-height: 22px;
+    .cc-switch__label {
 
+      height: 22px;
+      line-height: 22px;
+
+      &.is-selected {
+        .cc-icon {
+          color: var(--link-item-hover);
+        }
+      }
+
+      &.input-label {
         .cc-icon {
           color: var(--link-item);
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch as AntSwitch } from 'antd';
-import { InputLabel } from '../../index';
+import SwitchLabel from './SwitchLabel';
 import { SwitchProps as AntSwitchProps } from 'antd';
 import './Switch.less';
 
@@ -15,6 +15,8 @@ const Switch = ({
   id = 'cc-switch',
   className = '',
   testId = 'switch-component',
+  defaultChecked,
+  onChange,
   labelRight,
   labelLeft,
   ...props
@@ -22,19 +24,28 @@ const Switch = ({
   return (
     <div data-testid={testId} className={`cc-switch ${className}`}>
       {labelLeft && (
-        <InputLabel
+        <SwitchLabel
           forId={id}
           label={labelLeft}
-          labelClassName="cc-switch__with-label left"
+          position="left"
+          switchState={!defaultChecked}
+          labelClassName={`left ${!defaultChecked ? 'is-selected' : ''}`}
           className="cc-switch__label"
         />
       )}
-      <AntSwitch id={id} {...props} />
+      <AntSwitch
+        id={id}
+        defaultChecked={defaultChecked}
+        onChange={onChange}
+        {...props}
+      />
       {labelRight && (
-        <InputLabel
+        <SwitchLabel
           forId={id}
           label={labelRight}
-          labelClassName="cc-switch__with-label right"
+          position="right"
+          switchState={defaultChecked}
+          labelClassName={`right ${defaultChecked ? 'is-selected' : ''}`}
           className="cc-switch__label"
         />
       )}

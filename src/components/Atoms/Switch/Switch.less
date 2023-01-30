@@ -1,8 +1,9 @@
 .cc-switch {
-  .cc-switch__with-label {
+  .cc-switch__label {
     color: var(--body-text-default);
     font-family: var(--default-font);
     font-size: var(--font-size-body);
+    display: inline;
 
     &.right {
       margin-left: 8px;
@@ -12,8 +13,7 @@
       margin-right: 8px;
     }
 
-    .cc-switch__label {
-      display: inline;
+    &.input-label {
       cursor: pointer;
 
       &:hover {

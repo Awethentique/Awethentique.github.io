@@ -15,7 +15,6 @@ const ShowMore = ({ textArray, expandTextDisplay = 'more' }: ShowMoreProps) => {
     setIsCollapsed(!isCollapsed);
   };
 
-  console.log(textArray.length);
   return (
     <div className="cc-show-more">
       {textArray.map((paragraph, i) => {
