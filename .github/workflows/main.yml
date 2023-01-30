@@ -28,7 +28,6 @@ jobs:
 
       - name: Build 🏗️
         run: |
-          npm cache clean
           npm run build
 
       - name: Deploy to GH Pages 🚀
@@ -38,9 +37,3 @@ jobs:
           publish_dir: build
 
       
-      # - name: Deploy to GH Pages 🚀
-      #   uses: JamesIves/github-pages-deploy-action@releases/v4
-      #   with: 
-      #     branch: gh-pages
-      #     folder: 'build'
-      #     token: ${{ secrets.PUSH_TOKEN }}
