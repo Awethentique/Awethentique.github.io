@@ -5,7 +5,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "deploy-to-io": "npm run deploy -- -m 'Deploy React app to GitHub Pages'",
+    "deploy-to-io": "npm run deploy -- -m 'Deploy My app to GitHub Pages'",
     "fontello-update": "fontello-cli --config src/assets/fontello/config.json install",
     "fontello-view":"fontello-cli --config src/assets/fontello/config.json open",
     "start": "node scripts/start.js",
