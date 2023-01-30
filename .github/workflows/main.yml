@@ -29,6 +29,3 @@ jobs:
       - name: Build 🏗️ and Deploy to GH Pages 🚀
         run: |
           npm run deploy-to-io
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
