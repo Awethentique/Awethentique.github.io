@@ -26,12 +26,9 @@ jobs:
       - name: Install 🔧
         run: npm install --cache /tmp/empty-cache
 
-      - name: Build 🏗️
+      - name: Build 🏗️ and Deploy to GH Pages 🚀
         run: |
-          npm run predeploy
-
-      - name: Deploy to GH Pages 🚀
-        uses: peaceiris/actions-gh-pages@v3
+          npm run deploy-to-io
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build
+
