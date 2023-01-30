@@ -35,7 +35,10 @@ export const contactButtonsData = [
       avatarSrc: HTML5PeriodicTableAvatar,
       title: 'Periodic table of HTML5 elements',
       description:
-      'Inspired by the work done by Mike Golus on a periodic table and other references on the internet. I decided to expand on his project and make my own variation, showing all the HTML 5 elements in a periodic table format. The elements are grouped based on the developer.mozilla.org HTML elements reference. This project is mostly done using styling with very little javascript.',
+        [
+          'Expanding on the work done by Mike Golus and other periodic table inspired initiatives, I used the information from developer.mozilla.org and created a Periodic table based on the latest HTML 5 elements.',
+          'Using CSS styling and minimal Javascript, the elements are grouped in an easy to understand format.'
+        ],
       url: '/projects/HTML5-Periodic/index.html',
     },
     {
@@ -43,14 +46,23 @@ export const contactButtonsData = [
       avatarSrc: AtomicDesignAvatar,
       title: 'Atomic design methodology',
       description:
-      'The methodology of Atomic design has taught me the value of building scalable solutions from the start. I use this methodology in my design thinking to help bridge the gap between the design and development teams I work with. Using this methodology, I allow the developers to build web pages as though they were "playing with lego bricks". I decided to start this project to help demonstrate the power and effectiveness of Atomic design in many projects (currently a work in progress)',
+        [
+          'The value of building scalable solutions is crucial to the technological success of a business.',
+          'Based on a similar concept of Lego, I use Atomic design methodology in design thinking to create components that are interchangeable and agile.',
+          'Because my skills bridge the gap between design and development, the efficiency this creates within a team leads to faster turnaround, deployment and minimal errors as the components are pre-tested.',
+          '(Currently a work in progress)'
+        ],
     },
     {
       imgSrc: UXEassessment,
       avatarSrc: UXEassessmentAvatar,
       title: 'UXE assessment',
       description:
-        'I was tasked to build a pixel-perfect web page as an assessment for a job interview. Here I taught myself some new libraries while doing the assessment. The task was only to "build as you see" for a web-only desktop application. I got carried away with presenting my passion for building useful interfaces and including responsive, fluidly adaptive layouts across all mobile devices as well. ',
+        [
+          'Assessments are a regular requirement for recruiters and hiring teams.',
+          'Having researched and tested the best code, designs and user experience for this particular application, I created a responsive layout for web and mobile interfaces, even though the requirement was for web only.',
+          'No additional time was taken to do so as all my work is fully adaptive using my decades of experience.'
+        ],
       url: '/projects/UXE-assessment/index.html',
     },
   ];

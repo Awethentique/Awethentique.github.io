@@ -1,9 +1,8 @@
 import React from 'react';
-import { Avatar, Typography, Card  } from '../../index';
+import { Avatar, Card, ShowMore } from '../../index';
 
 import './ProjectCard.less';
 
-const { Paragraph } = Typography;
 const { Meta } = Card;
 
 interface ProjectCardProps {
@@ -11,7 +10,7 @@ interface ProjectCardProps {
   imgAlt: string;
   avatarSrc: string;
   cardTitle: string | 'show-placeholder';
-  description: string;
+  description: [];
   url?: string;
 }
 
@@ -23,8 +22,6 @@ const ProjectCard = ({
   description,
   url,
 }: ProjectCardProps) => {
-  // const [ellipsis, setEllipsis] = useState(true);
-
   const isPlaceholder = cardTitle === 'show-placeholder';
 
   const onclick = (e: any) => {
@@ -36,17 +33,8 @@ const ProjectCard = ({
     <Card cover={<img alt={imgAlt} src={imgSrc} />}>
       <Meta
         avatar={<Avatar src={avatarSrc} />}
-        // title={<Paragraph ellipsis={{ rows: 2 }}>{cardTitle}</Paragraph>}
         title={cardTitle}
-        description={
-          <Paragraph
-            ellipsis={
-              true ? { rows: 2, expandable: true, symbol: 'more' } : false
-            }
-          >
-            {description}
-          </Paragraph>
-        }
+        description={<ShowMore textArray={description} />}
       />
     </Card>
   );

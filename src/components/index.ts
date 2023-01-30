@@ -11,6 +11,7 @@ export { default as message } from './Atoms/Message/Message';
 // Typography templates
 export { default as InputLabel } from './Atoms/Typography/Templates/InputLabel';
 export { default as ForcedPresentation } from './Atoms/Typography/Templates/ForcedPresentation';
+export { default as ShowMore } from './Atoms/Typography/Templates/ShowMore';
 
 // Molecules
 export { default as ProfileInfo } from './Molecules/ProfileInfo/ProfileInfo';
