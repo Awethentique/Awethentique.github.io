@@ -1,6 +1,3 @@
-# Created by MichaelCurrin
-# https://gist.github.com/MichaelCurrin/a698731096f78240f653faf9a9127cba
-
 name: Build and deploy 
 
 on:
@@ -32,35 +29,3 @@ jobs:
         with:
           folder: build # The folder the action should deploy.
 
-# jobs:
-#   build:
-#     name: Build and deploy app
-
-#     runs-on: ubuntu-latest
-
-#     steps:
-#       - name: Checkout 🛎️
-#         uses: actions/checkout@master
-#         with:
-#           persist-credentials: true
-
-#       - name: Install 🔧
-#         run: npm install --cache /tmp/empty-cache
-
-#       - name: Build 🏗️
-#         run: |
-#           npm run build
-
-#       - name: Deploy to GH Pages 🚀
-#         uses: peaceiris/actions-gh-pages@v3
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: build
-
-#       - name: Deploy to GH Pages 🚀
-#         uses: JamesIves/github-pages-deploy-action@releases/v4
-#         with: 
-#           branch: gh-pages
-#           folder: 'build'
-#           token: ${{ secrets.PUSH_TOKEN }}
-      
