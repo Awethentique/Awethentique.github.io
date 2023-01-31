@@ -25,7 +25,7 @@ export const contactButtonsData = [
   export const profileInfo = {
     linkUrl:"https: //awethentique.github.io /projects",
     userName:"Ritesh Makan",
-    role:"Ui/Ux Engineer/Architect",
+    role:"Ui/Ux Engineer/Architect.",
     msg:"Passionate about user experience!",
   }
   
