@@ -47,6 +47,7 @@ export const contentInfo = [
     title: 'Storybook Design system',
     description: [
       'To build this portfolio, I decided to host all the storybook components.',
+      "This helped me build UI components in isolation from my app's business logic, data, and context. That makes it easy to develop hard-to-reach states and allows for much better scaling as the ecosystem grows.",
       '(Currently a work in progress)',
     ],
     url: '/projects/storybook-static/index.html',
