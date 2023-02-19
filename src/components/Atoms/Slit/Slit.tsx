@@ -1,5 +1,6 @@
-import React from 'react';
 import './Slit.less';
+
+import React from 'react';
 
 const Slit = () => {
   return <div className="cc-slit"></div>;

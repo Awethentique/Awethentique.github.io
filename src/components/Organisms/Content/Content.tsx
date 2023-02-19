@@ -1,7 +1,9 @@
-import React from 'react';
-import { ProjectCard, List } from '../../index';
-import { contentInfo } from '../../../data/AppData';
 import './Content.less';
+
+import React from 'react';
+
+import { contentInfo } from '../../../data/AppData';
+import { List,ProjectCard } from '../../index';
 
 const Content = () => {
   return (

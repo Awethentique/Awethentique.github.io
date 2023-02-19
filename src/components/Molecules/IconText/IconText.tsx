@@ -1,7 +1,9 @@
-import React from 'react';
-import { Typography, Icon } from '../../index';
-import type { FontelloIcons } from '../../shared/shared-types';
 import './IconText.less';
+
+import React from 'react';
+
+import { Icon,Typography } from '../../index';
+import type { FontelloIcons } from '../../shared/shared-types';
 
 interface IconTextProps {
   fontIcon: FontelloIcons | 'no-icon';

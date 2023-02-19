@@ -1,7 +1,6 @@
-import { message as AntMessage } from 'antd';
-
 import './Message.style.less';
 
+import { message as AntMessage } from 'antd';
 import { MessageArgsProps as AntMessageProps } from 'antd';
 
 export interface MessageContentWithUndoProps {

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { InputLabel } from '../../index';
 
 interface SwitchLabelProps {

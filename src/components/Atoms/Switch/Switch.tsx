@@ -1,8 +1,10 @@
-import React from 'react';
-import { Switch as AntSwitch } from 'antd';
-import SwitchLabel from './SwitchLabel';
-import { SwitchProps as AntSwitchProps } from 'antd';
 import './Switch.less';
+
+import { Switch as AntSwitch } from 'antd';
+import { SwitchProps as AntSwitchProps } from 'antd';
+import React from 'react';
+
+import SwitchLabel from './SwitchLabel';
 
 interface SwitchProps extends AntSwitchProps {
   id?: string;

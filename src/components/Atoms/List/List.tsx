@@ -1,8 +1,8 @@
-import React from 'react';
-import { List as AntList } from 'antd';
-import type { ListProps as AntListProps } from 'antd';
-
 import './List.style.less';
+
+import type { ListProps as AntListProps } from 'antd';
+import { List as AntList } from 'antd';
+import React from 'react';
 
 interface ListProps<T> extends AntListProps<T> {
   testId?: string;

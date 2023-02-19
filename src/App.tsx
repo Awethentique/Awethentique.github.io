@@ -1,8 +1,10 @@
-import React from 'react';
-import { Header, Content } from './components/index';
 import 'normalize.css';
 import './assets/fontello/css/awethentique.css';
 import './style/style.less';
+
+import React from 'react';
+
+import { Content,Header } from './components/index';
 
 const App = () => {
   return (

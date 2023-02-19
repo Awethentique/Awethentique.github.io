@@ -1,7 +1,8 @@
-import React from 'react';
-import { Avatar, Card, ShowMore } from '../../index';
-
 import './ProjectCard.less';
+
+import React from 'react';
+
+import { Avatar, Card, ShowMore } from '../../index';
 
 const { Meta } = Card;
 

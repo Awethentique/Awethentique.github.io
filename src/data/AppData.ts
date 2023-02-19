@@ -1,10 +1,10 @@
-import HTML5PeriodicTable from '../assets/images/HTML5-periodic-table.png';
-import HTML5PeriodicTableAvatar from '../assets/images/avatars/HTML5.png';
-import UXEassessment from '../assets/images/UXE-assessment.png';
-import UXEassessmentAvatar from '../assets/images/avatars/assessment.png';
 import AtomicDesign from '../assets/images/atomic-design.png';
+import UXEassessmentAvatar from '../assets/images/avatars/assessment.png';
 import AtomicDesignAvatar from '../assets/images/avatars/atom.png';
+import HTML5PeriodicTableAvatar from '../assets/images/avatars/HTML5.png';
 import StorybookAvatar from '../assets/images/avatars/storybook.png';
+import HTML5PeriodicTable from '../assets/images/HTML5-periodic-table.png';
+import UXEassessment from '../assets/images/UXE-assessment.png';
 
 export const contactButtonsData = [
   {

@@ -1,7 +1,8 @@
-import React from 'react';
-import { Popover as AntPopover } from 'antd';
-import type { PopoverProps as AntPopoverProps } from 'antd';
 import './Popover.style.less';
+
+import type { PopoverProps as AntPopoverProps } from 'antd';
+import { Popover as AntPopover } from 'antd';
+import React from 'react';
 
 export interface PopoverProps extends AntPopoverProps {
   className?: string;
