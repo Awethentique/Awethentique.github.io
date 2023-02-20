@@ -1,7 +1,8 @@
-import React from 'react';
-import { Typography as AntTypography } from 'antd';
-import type { TypographyProps as AntTypographyProps } from 'antd';
 import './Typography.less';
+
+import type { TypographyProps as AntTypographyProps } from 'antd';
+import { Typography as AntTypography } from 'antd';
+import React from 'react';
 
 interface TypographyProps extends AntTypographyProps {
   className?:

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { Typography, IconButtonStrip, Card, Switch, Icon } from '../../index';
-import type { ButtonData } from '../IconButtonStrip/IconButtonStrip';
-import { useLocalStorage } from '../../shared/local-storage';
-
 import './ProfileInfo.less';
+
+import React, { useEffect } from 'react';
+
+import { Card, Icon,IconButtonStrip, Switch, Typography } from '../../index';
+import { useLocalStorage } from '../../shared/local-storage';
+import type { ButtonData } from '../IconButtonStrip/IconButtonStrip';
 
 interface ProfileInfoProps {
   linkUrl: string;

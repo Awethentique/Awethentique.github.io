@@ -1,8 +1,8 @@
-import React from 'react';
-import { Card as AntCard } from 'antd';
-import type { CardProps as AntCardProps } from 'antd';
-
 import './Card.style.less';
+
+import type { CardProps as AntCardProps } from 'antd';
+import { Card as AntCard } from 'antd';
+import React from 'react';
 
 interface CardProps extends AntCardProps {
   testId?: string;

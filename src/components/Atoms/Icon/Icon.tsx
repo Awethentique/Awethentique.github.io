@@ -1,7 +1,9 @@
-import React from 'react';
 import './Icon.less';
+
+import React from 'react';
+
 import { Popover } from '../../index';
-import type { IconSizes, FontelloIcons } from '../../shared/shared-types';
+import type { FontelloIcons,IconSizes } from '../../shared/shared-types';
 interface CommonIconProps {
   testId?: string;
   style?: React.CSSProperties;

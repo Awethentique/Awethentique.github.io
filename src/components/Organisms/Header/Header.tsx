@@ -1,8 +1,10 @@
+import './Header.less';
+
 import React from 'react';
-import { Slit, Avatar, ProfileInfo, Icon } from '../../index';
+
 import Me from '../../../assets/images/me.jpg';
 import { contactButtonsData, profileInfo } from '../../../data/AppData';
-import './Header.less';
+import { Avatar, Icon,ProfileInfo, Slit } from '../../index';
 
 const Header = () => {
   const { linkUrl, userName, role, msg } = profileInfo;
