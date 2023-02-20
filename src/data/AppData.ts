@@ -4,6 +4,7 @@ import AtomicDesignAvatar from '../assets/images/avatars/atom.png';
 import HTML5PeriodicTableAvatar from '../assets/images/avatars/HTML5.png';
 import StorybookAvatar from '../assets/images/avatars/storybook.png';
 import HTML5PeriodicTable from '../assets/images/HTML5-periodic-table.png';
+import Storybook from '../assets/images/storybook.png';
 import UXEassessment from '../assets/images/UXE-assessment.png';
 
 export const contactButtonsData = [
@@ -42,7 +43,7 @@ export const contentInfo = [
     url: '/projects/HTML5-Periodic/index.html',
   },
   {
-    imgSrc: AtomicDesign,
+    imgSrc: Storybook,
     avatarSrc: StorybookAvatar,
     title: 'Storybook Design system',
     description: [
@@ -50,7 +51,7 @@ export const contentInfo = [
       "This helped me build UI components in isolation from my app's business logic, data, and context. That makes it easy to develop hard-to-reach states and allows for much better scaling as the ecosystem grows.",
       '(Currently a work in progress)',
     ],
-    url: '/projects/storybook-static/index.html',
+    url: '/projects/storybook-static/index.html?path=/story/components-organisms-header--default',
   },
   {
     imgSrc: AtomicDesign,
